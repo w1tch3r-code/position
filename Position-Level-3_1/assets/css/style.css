@@ -1,0 +1,192 @@
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+@font-face {
+    font-family: "Monoton";
+    src: url("./../fonts/Monoton-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./../fonts/Ubuntu-Regular.ttf");
+}
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+:root {
+    --main-text: rgba(241, 241, 241, 0.75);
+    --navi-color: rgb(111, 104, 100);
+    --wrapper-bg: rgb(29, 32, 37);
+    --accent: rgb(176, 128, 93);
+}
+
+/* ========================================================== 
+                        Body – Wrapper
+========================================================== */
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Ubuntu";
+    height: 100vh;
+    background-color: rgb(54, 60, 69);
+}
+
+.wrapper {
+    max-width: 90rem;
+    margin: 0 auto;
+    background-color: var(--wrapper-bg);
+}
+
+/* ========================================================== 
+                            Content
+========================================================== */
+header {
+    border-bottom: 1px solid rgb(114, 117, 119);
+    color: var(--navi-color);
+    background-color: var(--wrapper-bg);
+    padding-block: 5px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    margin-block-end: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sub__nav {
+    display: flex;
+    align-items: center;
+}
+
+.sub__nav a:nth-of-type(1) {
+    font-family: "Monoton";
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-right: 38px;
+}
+
+.main__nav ul {
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    display: flex;
+    gap: 120px;
+}
+
+.main__nav ul li:nth-of-type(1) {
+    color: var(--main-text);
+}
+
+main {
+    position: relative;
+    height: 856px;
+}
+
+.moods {
+    max-width: 826px;
+    height: 600px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 38px;
+}
+
+.moods img {
+    width: 30%;
+    object-fit: cover;
+}
+
+.claim {
+    position: absolute;
+    top: 407px;
+    left: 216px;
+    width: 346px;
+    z-index: 1;
+}
+
+.claim h1 {
+    color: var(--main-text);
+    font-size: 3.75rem;
+    font-weight: 700;
+    padding-block-end: 80px;
+}
+
+.line {
+    display: block;
+    width: 40px;
+    border-bottom: 3px solid var(--accent);
+}
+
+.claim div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.claim div a {
+    color: var(--accent);
+    font-size: 0.75rem;
+    font-weight: 400;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 2rem;
+    padding-inline: 72px;
+}
+
+.social svg{
+    margin-right: 25px;
+}
+
+.fw_bw {
+    display: flex;
+    gap: 32px;
+}
+
+
+.bw, .fw {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--accent);
+    border-radius: 50%;
+    color: var(--navi-color);
+    font-size: 0.85rem;
+    font-weight: 400;
+}

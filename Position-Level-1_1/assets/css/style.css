@@ -1,0 +1,70 @@
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./../fonts/Poppins-Regular.ttf');
+}
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+:root {
+    --main-text: rgb(255, 255, 255);
+}
+
+/* ========================================================== 
+                            Body
+========================================================== */
+
+body {
+    font-family: 'Poppins';
+    color: var(--main-text);
+    background: url('https://images.unsplash.com/photo-1599551528722-6b6d968512a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80') center / cover no-repeat;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+
+/* ========================================================== 
+                            Content
+========================================================== */
+
+main div {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    text-align: right;
+}
+
+main div h1 {
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+
+main div p {
+    font-size: 2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}

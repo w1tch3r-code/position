@@ -1,0 +1,92 @@
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* ========================================================== 
+                        Image Links
+========================================================== */
+
+/* https://source.unsplash.com/random?night sky */
+/* https://source.unsplash.com/random/?Cryptocurrency&1 */
+
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+@font-face {
+    font-family: "Ubuntu";
+    src: url("./../fonts/Ubuntu-Regular.ttf");
+}
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+/* ========================================================== 
+                        Body – Wrapper
+========================================================== */
+
+body {
+    scroll-behavior: smooth;
+    font-family: "Ubuntu";
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1526565278154-ab23e27d998e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bmlnaHQgc2t5fHx8fHx8MTY5Njk1Nzc2MA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1920') bottom / cover no-repeat;
+    position: relative;
+}
+
+/* .wrapper {
+    max-width: 90rem;
+    margin: 0 auto;
+    background-color: var(--wrapper-bg);
+} */
+
+/* ========================================================== 
+                            Content
+========================================================== */
+
+.modal {
+    width: clamp(15.625em, 50%, 25em);
+    min-height: 15.625em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #F62B54;
+    color: white;
+    border-radius: 1.25em;
+    padding: 2.5em;
+}
+
+.modal img {
+    width: 30px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    filter: invert(1);
+}
+
+.modal h1 {
+    padding-block: 1.5625rem;
+    text-decoration: underline;
+}
+
+.modal p {
+    max-width: 15em;
+}

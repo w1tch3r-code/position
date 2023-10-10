@@ -1,0 +1,109 @@
+/* ========================================================== 
+                            Resets
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ========================================================== 
+                            Fonts
+========================================================== */
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('./../fonts/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Playfair';
+    src: url('./../fonts/PlayfairDisplay-VariableFont_wght.ttf');
+}
+
+/* ========================================================== 
+                Variables / Custom Properties
+========================================================== */
+
+:root {
+    --main-text: rgb(20, 20, 15);
+    --body-bg: rgb(237, 240, 226);
+    --button-border: rgb(118, 118, 118);
+    --button-bg: rgb(255, 170, 54);
+}
+
+/* ========================================================== 
+                        Body – Wrapper
+========================================================== */
+
+body {
+    color: var(--main-text);
+    background-color: var(--body-bg);
+    scroll-behavior: smooth;
+}
+
+
+.wrapper {
+    max-width: 90rem;
+    margin: 0 auto;
+    position: relative;
+    min-height: 100vh;
+}
+
+
+/* ========================================================== 
+                            Content
+========================================================== */
+
+article {
+    position: absolute;
+    top: 166px;
+    left: 144px;
+    max-width: 356px;
+    z-index: 1;
+}
+
+article h1 {
+    font-size: 3rem;
+    font-weight: 600;
+    font-family: 'Playfair';
+}
+
+article p {
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: -0.5px;
+    font-family: 'Poppins';
+    padding-block: 14px 42px;
+
+}
+
+article a {
+    font-family: Arial;
+    font-size: 1.1rem;
+    font-weight: 400;
+    display: inline-block;
+    background-color: var(--button-bg);
+    border: 2px solid var(--button-border);
+    padding-block: 1rem;
+    padding-inline: 82px;
+    border-radius: 20px;
+}
+
+main > div {
+    position: absolute;
+    max-width: 740px;
+    top: 0;
+    right: -100px;
+}
